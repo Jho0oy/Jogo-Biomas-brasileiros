@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>A4 — Eu te amo com linha fina (Jogo Educativo)</title>
+  <title>Biomas Brasileiros (Jogo Educativo)</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +11,7 @@
   <main id="app">
     <section id="start-screen" class="screen active">
       <div class="card">
-        <h1>🌎 A4 — Eu te amo com linha fina</h1>
+        <h1>🌎 Biomas Brasileiros (Jogo Educativo)</h1>
         <p class="lead">Escolha biomas, enfrente problemas ambientais e salve o planeta com os ODS.</p>
         <button id="start-btn" class="btn primary">Começar jogo</button>
       </div>
@@ -21,14 +21,45 @@
       <div class="card map-card">
         <h2>Escolha o próximo bioma 🌍</h2>
         <div id="biome-map" class="biome-map">
-          <div id="rocket" class="rocket">🚀</div>
-          <button class="biome-point" data-id="amazonia" style="top:18%;left:15%;" title="Amazônia">🌳</button>
-          <button class="biome-point" data-id="cerrado" style="top:45%;left:30%;" title="Cerrado">🌾</button>
-          <button class="biome-point" data-id="caatinga" style="top:65%;left:55%;" title="Caatinga">🌵</button>
-          <button class="biome-point" data-id="pantanal" style="top:70%;left:40%;" title="Pantanal">🦜</button>
-          <button class="biome-point" data-id="mata" style="top:35%;left:70%;" title="Mata Atlântica">🌲</button>
-          <button class="biome-point" data-id="pampa" style="top:80%;left:85%;" title="Pampa">🐄</button>
+        <div id="rocket" class="rocket">🚀</div>
+
+        <!-- Amazônia -->
+        <div class="biome-container" style="top:18%;left:15%;">
+          <span class="biome-label">Amazônia</span>
+          <button class="biome-point" data-id="amazonia" title="Amazônia">🌳</button>
         </div>
+
+        <!-- Cerrado -->
+        <div class="biome-container" style="top:45%;left:30%;">
+          <span class="biome-label">Cerrado</span>
+          <button class="biome-point" data-id="cerrado" title="Cerrado">🌾</button>
+        </div>
+
+        <!-- Caatinga -->
+        <div class="biome-container" style="top:65%;left:55%;">
+          <span class="biome-label">Caatinga</span>
+          <button class="biome-point" data-id="caatinga" title="Caatinga">🌵</button>
+        </div>
+
+        <!-- Pantanal -->
+        <div class="biome-container" style="top:70%;left:40%;">
+          <span class="biome-label">Pantanal</span>
+          <button class="biome-point" data-id="pantanal" title="Pantanal">🦜</button>
+        </div>
+
+        <!-- Mata Atlântica -->
+        <div class="biome-container" style="top:35%;left:70%;">
+          <span class="biome-label">Mata Atlântica</span>
+          <button class="biome-point" data-id="mata" title="Mata Atlântica">🌲</button>
+        </div>
+
+        <!-- Pampa -->
+        <div class="biome-container" style="top:80%;left:85%;">
+          <span class="biome-label">Pampa</span>
+          <button class="biome-point" data-id="pampa" title="Pampa">🐄</button>
+        </div>
+      </div>
+
         <div class="controls">
           <button id="biome-back" class="btn">Voltar</button>
         </div>
